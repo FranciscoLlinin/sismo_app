@@ -66,7 +66,7 @@ This project consists of the development of an application in Ruby on Rails that
 ```json
 {
     "comment":{
-         "body": "This is a comment".
+         "body": "This is a comment"
     }
   
 }

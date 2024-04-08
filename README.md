@@ -39,6 +39,15 @@ This project consists of the development of an application in Ruby on Rails that
    rails db:migrate
    ```
 
+## Running the Server
+To bring up the server, run the following command:
+```
+rails server
+```
+
+The server will start at `http://localhost:3000`.
+
+
 ## REST API Endpoints
 
 ### Endpoint 1: Get List of Features
@@ -75,10 +84,3 @@ This project consists of the development of an application in Ruby on Rails that
 **Response**:
 ![alt text](image-2.png)
 
-## Running the Server
-To bring up the server, run the following command:
-```
-rails server
-```
-
-The server will start at `http://localhost:3000`.

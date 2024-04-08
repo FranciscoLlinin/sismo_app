@@ -1,24 +1,42 @@
-# README
+# Seismic Data Project
 
-This README would normally document whatever steps are necessary to get the
-application up and running.
+##General Description
 
-Things you may want to cover:
+This project consists of the development of an application in Ruby on Rails that obtains and delivers information related to seismological data in the United States.  It includes:
 
-* Ruby version
+1. **Data Retrieval and Persistence**: A task to retrieve seismological data from the USGS feed (earthquake.usgs.gov) and persist it in a database, complying with certain validations.
 
-* System dependencies
+2. **REST API Endpoints:
+   - **Endpoint 1**: Gets a list of seismic events (features) and allows filtering by `mag_type`, `page` and `per_page`.
+   - Endpoint 2**: Creates a comment associated to a specific seismic event (feature).
 
-* Configuration
+## Requirements
 
-* Database creation
+* Ruby version 3.1.0 or  higher
+* Rails version 6.1.4 or higher
+* Database like sqlite3 or PostgreSQL
 
-* Database initialization
+## Project Configuration
 
-* How to run the test suite
+1. **Clone the Repository**:
+   ```
+   git clone https://github.com/FranciscoLlinin/sismo_app.git
+   cd sismo_app
+   ```
 
-* Services (job queues, cache servers, search engines, etc.)
+2. **Install Dependencies**:
+   ```
+   bundle install
+   ```
+3. **Run the Data Retrieval and Persistence Task in the rails console**:
+   ```
+   EarthquakeDataSyncTask.new.perform
+   ```
+   This task is responsible for fetching seismic data from the USGS feed and persisting it to the database.
 
-* Deployment instructions
+4. **Configure the Database**:
+   ```
+   rails db:migrate
+   ```
 
-* ...
+

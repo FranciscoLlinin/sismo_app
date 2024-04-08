@@ -65,7 +65,10 @@ This project consists of the development of an application in Ruby on Rails that
 **Upload**:
 ```json
 {
-  "```body``: ```This is a comment``.
+    "comment":{
+         "body": "This is a comment".
+    }
+  
 }
 ```
 

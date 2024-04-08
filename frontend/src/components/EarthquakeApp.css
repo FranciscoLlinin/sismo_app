@@ -1,0 +1,167 @@
+/* Global styles */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+  }
+  
+  /* Earthquake App styles */
+  .earthquake-app {
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 2rem;
+  }
+  
+  .earthquake-app h1 {
+    text-align: center;
+    margin-bottom: 2rem;
+    
+  }
+  
+  .filters {
+    display: flex;
+    flex-wrap: wrap;
+    margin-bottom: 2rem;
+  }
+  
+  .filters label {
+    margin-right: 1rem;
+    margin-bottom: 0.5rem;
+  }
+  
+  .features-list {
+    list-style-type: none;
+    padding: 0;
+  }
+  
+  .features-list li {
+    border: 1px solid #ccc;
+    padding: 1rem;
+    margin-bottom: 1rem;
+  }
+  
+  .features-list h4 {
+    margin-top: 0;
+  }
+  
+  .pagination {
+    display: flex;
+    justify-content: center;
+    margin-top: 2rem;
+  }
+  
+  .pagination button {
+    margin: 0 0.5rem;
+  }
+  
+  .comment-section {
+    margin-top: 2rem;
+    text-align: center;
+  }
+  
+  .comment-section textarea {
+    width: 100%;
+    height: 100px;
+    margin-bottom: 1rem;
+  }
+
+  .features-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    grid-gap: 20px;
+  }
+  
+  .feature-card {
+    background-color: #fff;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+  }
+  
+  .feature-card h4 {
+    margin-top: 0;
+    font-size: 1.2rem;
+  }
+  
+  .feature-card p {
+    margin: 0.5rem 0;
+  }
+  
+  .feature-card .external-link {
+    color: #007bff;
+    text-decoration: none;
+  }
+  
+  .feature-card .external-link:hover {
+    text-decoration: underline;
+  }
+  
+  .feature-card .add-comment-btn {
+    background-color: #007bff;
+    border: none;
+    color: #fff;
+    padding: 0.5rem 1rem;
+    border-radius: 4px;
+    cursor: pointer;
+    margin-top: 1rem;
+  }
+  
+  .feature-card .add-comment-btn:hover {
+    background-color: #0056b3;
+  }
+
+  .modal {
+    display: block;
+    position: fixed;
+    z-index: 1;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    overflow: auto;
+    background-color: rgba(0, 0, 0, 0.4);
+  }
+  
+  .modal-content {
+    background-color: #fefefe;
+    margin: 15% auto;
+    padding: 20px;
+    border: 1px solid #888;
+    width: 30%;
+  }
+  
+  .close {
+    color: #aaa;
+    float: right;
+    font-size: 28px;
+    font-weight: bold;
+  }
+  
+  .close:hover,
+  .close:focus {
+    color: black;
+    text-decoration: none;
+    cursor: pointer;
+  }
+  
+  .comment-textarea {
+    width: 100%;
+    height: 100px;
+    margin-bottom: 1rem;
+  }
+  
+  .submit-comment-btn {
+    background-color: #007bff;
+    border: none;
+    color: #fff;
+    padding: 0.5rem 1rem;
+    border-radius: 4px;
+    cursor: pointer;
+  }
+  
+  .submit-comment-btn:hover {
+    background-color: #0056b3;
+  }

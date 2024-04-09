@@ -84,3 +84,31 @@ The server will start at `http://localhost:3000`.
 **Response**:
 ![alt text](image-2.png)
 
+## Frontend with REACT
+To bring up frontend  in React you need to install NodeJS and npm then run the following commands from your terminal:
+
+1. **Access to frontend folder**:
+   ```
+   cd frontend
+   ```
+2.  **Installation**: Install the dependencies using npm
+
+3. Run the server in development mode using the following command: 
+   ```
+   npm run start
+   ```
+The server will start at `http://localhost:3000`, but but since the rails server is on that port it will open at `http://localhost:3001`.   
+
+4.  Open your browser and the app will be ready to use
+
+### App
+
+![alt text](image-3.png)
+
+### Filters
+
+![alt text](image-4.png)
+
+### Comments
+
+![alt text](image-5.png)

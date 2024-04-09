@@ -6,7 +6,7 @@ const CommentModal = ({ featureId, onClose, onCommentSubmit }) => {
 
   const handleCommentSubmit = async () => {
     try {
-      await axios.post('/api/features', {
+      await axios.post(`/api/features/${featureId}/comments`, {
         feature_id: featureId,
         body: commentBody,
       });
